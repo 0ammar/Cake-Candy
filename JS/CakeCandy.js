@@ -3,7 +3,7 @@ let landing = document.querySelector(".landing");
 let imagesArray = ["01.jpg", "02.jpg", "03.jpg", "04.jpg"];
 setInterval(() => {
   let count = Math.floor(Math.random() * imagesArray.length);
-  landing.style.background = `url(images/${imagesArray[count]})`;
+  landing.style.background = `url(Images/${imagesArray[count]})`;
 }, 5000);
 // Open bars
 let bars = document.querySelector(".bars");
