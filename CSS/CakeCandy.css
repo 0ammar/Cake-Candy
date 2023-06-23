@@ -50,7 +50,7 @@ li {
   }
 }
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 12px;
 }
 ::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
@@ -78,17 +78,33 @@ li {
 }
 /* End Components */
 /* Section Header */
+.header {
+  padding: 5px 0;
+}
 .header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
 }
+.header a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header a h1 {
+  color: var(--main-color);
+  margin: 0 0 0 10px;
+  font-weight: 400;
+  position: relative;
+  z-index: 100;
+}
 .header a img {
   position: relative;
   z-index: 100;
   max-width: 100%;
-  width: 75px;
+  width: 50px;
+  height: 50px;
 }
 .header .holder .links {
   display: flex;
@@ -99,14 +115,14 @@ li {
   margin-right: 10px;
   padding: 5px 10px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--main-color);
   border-radius: 10px;
   transition: var(--main-transition);
 }
 .header .holder .links .link:hover {
-    color: white;
-    background-color: var(--main-color);
+  color: white;
+  background-color: var(--main-color);
 }
 @media (min-width: 768px) {
   .header .links .bars {
@@ -185,7 +201,7 @@ li {
   position: relative;
   background-image: url(../Images/01.jpg);
   background-size: auto;
-  min-height: calc(100vh - 75px);
+  min-height: calc(100vh - 60px);
   transition: 0.5s;
 }
 .landing::before {
